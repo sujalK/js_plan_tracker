@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/91d84b7ea9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>ActionPlanner</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header id="main-header">
+      <h1><i class="fas fa-newspaper text-primary"></i> ActionPlanner</h1>
+    </header>
+
+    <!-- Section: Planner add -->
+    <section id="planner-diary">
+        <div class="container" id="main-container">
+
+            <div class="img"><img src="./img/event.png" alt=""></div>
+            <form id="planner-form">
+                <div class="form-group">
+                    <label for="plan">Plan your Next app?</label>
+                    <input type="text" id="plan" placeholder="Enter your Current plan">
+                </div>
+                <input type="submit" id="add_plan" class="btn-primary" value="Add Plan">
+            </form>
+
+            <form id="filter-form">
+                <div class="form-group">
+                    <input type="text" id="filter_plans" placeholder="Filter you plans">
+                </div>
+            </form>
+
+            <div id="plans">
+                <ul id="plan_ul"></ul>
+            </div>
+
+            <input type="button" class="btn-primary" id="clear" value="Clear Plans">
+
+        </div>
+    </section>
+    
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+/* Core classes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+}
+
+/* Utility Classes */
+.text-primary {
+  color: rgb(35, 34, 52);
+}
+
+.btn-primary {
+  color: #fff;
+  background: #333;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background: #555;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 2.5rem;
+  margin: auto;
+}
+
+/* For Dynamic Content */
+.plan-item {
+  border: 1px solid #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+i {
+  color: rosybrown;
+  display: block;
+  position: absolute;
+  right: 40px;
+}
+
+/* Header: main-header */
+#main-header {
+  background: linear-gradient(#ffd194, #ff6b6b);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Section: Planner Diary */
+#planner-diary img {
+  width: 30%;
+  display: block;
+  max-width: 300px;
+  margin: auto;
+}
+
+#planner-diary #planner-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+}
+
+#planner-diary #planner-form .form-group input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+#planner-diary #planner-form .form-group input,
+#planner-diary #planner-form .form-group label,
+#filter-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#filter-form {
+  margin-top: 1rem;
+}
+
+#filter-form input {
+  padding: 1rem;
+}
